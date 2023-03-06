@@ -43,13 +43,13 @@ export const authAtom = atom(null);
 //!firebase initialization
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDFrBi5Mn0nEJWLDylwApjFKBnJ6nMm7Cg",
-	authDomain: "game-hub-47948.firebaseapp.com",
-	projectId: "game-hub-47948",
-	storageBucket: "game-hub-47948.appspot.com",
-	messagingSenderId: "826278036918",
-	appId: "1:826278036918:web:86566c3073520152c26d17",
-	measurementId: "G-X9G0JR7JV9"
+	apiKey: "AIzaSyAFk28K9qBMayr1ndOXwaVX_-zvdCu71IU",
+	authDomain: "game-aggregator.firebaseapp.com",
+	projectId: "game-aggregator",
+	storageBucket: "game-aggregator.appspot.com",
+	messagingSenderId: "489480133225",
+	appId: "1:489480133225:web:c4421183b09beb486aa0f8",
+	measurementId: "G-E5F2QFT5JS"
   };
 
 const app = initializeApp(firebaseConfig);
@@ -72,6 +72,7 @@ function App() {
 	// Call to DB working but state isnt passed to children
 	useLayoutEffect(() => {
 		const auth = getAuth();
+		console.log(auth)
 		onAuthStateChanged(auth, async (user) => {
 		  if (user) {
 			console.log(user)
