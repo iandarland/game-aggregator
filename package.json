@@ -9,8 +9,8 @@
     "start": "node Backend/server.js && cd Frontend && npm run start",
     "client": "cd Frontend && npm start",
     "install:server": "cd Backend && npm i",
-    "install:client": "cd Frontend && npm i",
-    "install:all": "npm run install:server && npm run install:client && npm run install",
+    "install:client": "cd Frontend && npm i --force",
+    "install:all": "npm run install:server && npm run install:client && npm i",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:server": "cd Backend && npm run start",
     "start:client": "cd Frontend && npm run start"
