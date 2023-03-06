@@ -4,7 +4,7 @@
   "description": "Game-Aggregator that demos popular/trending games for multiple platforms - with reviews, player count, ESRB Ratings, descriptions, screenshots and possibly videos/trailers.",
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild":"npm run install:all",
+    "heroku-prebuild": "npm run install:all",
     "build": "cd Frontend && npm run build",
     "start": "node Backend/server.js && cd Frontend && npm run start",
     "client": "cd Frontend && npm start",
