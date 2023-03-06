@@ -6,7 +6,7 @@
   "scripts": {
     "heroku-prebuild": "npm run install:all",
     "build": "cd Frontend && npm run build",
-    "start": "node Backend/server.js && cd Frontend && npm run start",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "client": "cd Frontend && npm start",
     "install:server": "cd Backend && npm i",
     "install:client": "cd Frontend && npm i --force",
