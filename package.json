@@ -10,7 +10,7 @@
     "client": "cd Frontend && npm start",
     "install:server": "cd Backend && npm i",
     "install:client": "cd Frontend && npm i",
-    "install:all": "npm run install:server && npm run install:client && npm i --force",
+    "install:all": "npm run install:server && npm run install:client && npm run install",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:server": "cd Backend && npm run start",
     "start:client": "cd Frontend && npm run start"
